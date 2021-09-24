@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Selecting Words</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="selectingwords.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your knowledge of the topic- 'SELECTING WORDS'</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 5 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+               
+     <br><br>
+    <b>Ques1</b> In the sentence, replace the underlined part with its alternate meaning: Kiran<u> was in high spirits,</u> when he was called upon the stage to deliver his speech.
+    <br>
+    <input type="radio" name="option1" value="Capitalization" class="opt" onclick="cal1(1);"><span class="corr1">was very cheerful</span> <br>
+    <input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"> <span class="corr1">was very depressed</span><br>
+    <input type="radio" name="option1" value="Spelling"  class="opt" onclick="cal1(3);"> <span class="corr1">was deeply engrossed in thoughts</span><br>
+    <input type="radio" name="option1" value="Grammer"  class="opt" onclick="cal1(4);"><span class="corr1">None of the above</span> <br> <br>
+    <!-- 1. -->
+   
+    
+    
+<b>Ques2</b> Complete the following sentence with the most appropriate words/phrases with reference to grammar, idioms, proverbs and syntax: Time and tide wait ___________.  
+<br>
+
+<input type="radio" name="option2" value="Capitalization" class="opt" onclick="cal2(1);"><span class="corr2">For every man</span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">For no man</span> <br>
+<input type="radio" name="option2" value="Spelling"  class="opt" onclick="cal2(3);"><span class="corr2">For every woman</span><br>
+<input type="radio" name="option2" value="Grammar"  class="opt" onclick="cal2(4);"><span class="corr2">For no woman</span><br> <br>
+<!-- 2 -->
+
+<b>Ques3</b> Complete the following sentences with the most appropriate words/phrases with reference to grammar, idioms, proverbs and syntax: Do not expect me to ……… you ……. this horrendous crime.
+<br>
+<input type="radio" name="option3" value="Capitalization" class="opt" onclick="cal3(1);"> <span class="corr3">abet,by</span> <br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"> <span class="corr3">abet,with</span> <br>
+<input type="radio" name="option3" value="Spelling"  class="opt" onclick="cal3(3);"> <span class="corr3">abet,in</span> <br>
+<input type="radio" name="option3" value="Grammar"  class="opt" onclick="cal3(4);"> <span class="corr3"> abet,to</span> <br> <br>
+<!-- 3.-->
+
+<b>Ques4</b>Complete the following sentences with the most appropriate words/phrases with reference to grammar, idioms, proverbs and syntax: Birds of feather ______________ <br>
+<input type="radio" name="option4" value="Capitalization" class="opt" onclick="cal4(1);"><span class="corr4">fly together </span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">flock together </span> <br>
+<input type="radio" name="option4" value="Spelling"  class="opt" onclick="cal4(3);"> <span class="corr4">dance together</span> <br>
+<input type="radio" name="option4" value="Grammar"  class="opt" onclick="cal4(4);"> <span class="corr4">tweet together</span> <br> <br>
+<!-- 2 -->
+
+  
+
+    
+    
+<b>Ques 5</b> Complete the following sentences with the most appropriate words/phrases with reference to grammar, idioms, proverbs and syntax: ________________ should not throw stones.
+
+<br>
+ <input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">People in glass houses</span><br>
+ <input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5">People in crystal houses</span><br>
+ <input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">People in ice houses</span><br>
+ <input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">None of the above</span><br><br>
+  <!-- 1 -->
+ 
+</div>
+
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (a)was very cheerful <br> </li><br>
+
+            <li> (b)For no man <br></li><br>
+
+            <li> (c)abet,in<br> </li><br>
+
+
+            <li> (b)Flock together<br> </li> <br>
+
+                    
+            <li>(a)People in glass houses<br></li>
+
+                            
+
+
+            
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+</form>
+</body>
+</html>

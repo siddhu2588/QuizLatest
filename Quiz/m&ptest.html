@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Macros & Pre Processors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="m&ptest.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your knowledge of the topic- 'MACROS & PRE-PROCESSORS'</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 5 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+    <b>Ques 1</b> 	
+    	
+ 	
+    What will the SWAP macro in the following program be expanded to on preprocessing? will the code compile?<br>
+    <br>
+#include<stdio.h>
+        <br>#define SWAP(a, b, c)(c t; t=a, a=b, b=t)
+        <br>int main()
+        <br>{
+            <br>int x=10, y=20;
+            <br>  SWAP(x, y, int);
+            <br> printf("%d %d\n", x, y);
+            <br>    return 0;
+            <br>}<br>
+
+<input type="radio" name="option1" value="capitalization" class="opt" onclick="cal1(1); " ><span class="corr1">	It compiles</span><br>
+<input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"><span class="corr1">Compiles with an warning</span><br>
+<input type="radio" name="option1" value="Spelling" class="opt" onclick="cal1(3);"><span class="corr1">Not compile</span><br>
+<input type="radio" name="option1" value="Grammar" class="opt"  onclick="cal1(4);"><span class="corr1" >Compiles and print nothing </span><br><br>
+<!-- 3 --> 
+<!-- Numbers -->
+<!-- Explanation:
+
+S.I. for 1 year = Rs. (854 - 815) = Rs. 39.
+
+S.I. for 3 years = Rs.(39 x 3) = Rs. 117.
+
+ Principal = Rs. (815 - 117) = Rs. 698.
+
+ -->
+
+<b>Ques 2</b>
+	
+In which stage the following code<br>
+#include<stdio.h><br>
+gets replaced by the contents of the file stdio.h<br>
+<br>
+
+<input type="radio" name="option2" value="capitalization" class="opt" onclick="cal2(1);"><span class="corr2">During editing</span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">During linking</span><br>
+<input type="radio" name="option2" value="Spelling" class="opt" onclick="cal2(3);"><span class="corr2">During execution</span><br>
+<input type="radio" name="option2" value="Grammar" class="opt" onclick="cal2(4);"><span class="corr2">During preprocessing</span><br><br>
+<!-- 1 -->
+<!-- simplification-->
+<!-- Explanation:
+
+We need to know the S.I., principal and time to find the rate.
+
+Since the principal is not given, so data is inadequate. -->
+
+
+
+<b>Ques 3</b> 
+	
+What will be the output of the program?<br<br>>
+
+#include<stdio.h><br>
+#define MAN(x, y) ((x)>(y)) ? (x):(y);<br>
+
+int main()<br>
+{<br>
+    int i=10, j=5, k=0;<br>
+    k = MAN(++i, j++);<br>
+    printf("%d, %d, %d\n", i, j, k);<br>
+    return 0;<br>
+}<br>
+<br>
+<input type="radio" name="option3" value="capitalization" class="opt" onclick="cal3(1);"><span class="corr3">12, 6, Garbage</span><br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"><span class="corr3">11, 5, Garbage</span><br>
+<input type="radio" name="option3" value="Spelling" class="opt" onclick="cal3(3);"><span class="corr3">11, 5, 11</span><br>
+<input type="radio" name="option3" value="Grammar" class="opt" onclick="cal3(4);"><span class="corr3">12, 6, 12</span><br><br>
+<!-- 4 -->
+<!-- Odd one out -->
+
+<!-- Explanation:
+
+S.I. for 3 years = Rs. (12005 - 9800) = Rs. 2205.
+
+S.I. for 5 years = Rs. (2205/3)x 5	= Rs. 3675
+Principal = Rs. (9800 - 3675) = Rs. 6125.
+
+Hence, rate = (100 x 3675)/(6125 X 5) %	= 12%
+
+ -->
+
+<b>Ques 4</b> 
+What will be the output of the program?<br>
+
+#include<stdio.h><br>
+#define SQUARE(x) x*x<br>
+
+int main()<br>
+{<br>
+    float s=10, u=30, t=2, a;<br>
+    a = 2*(s-u*t)/SQUARE(t);<br>
+    printf("Result = %f", a);<br>
+    return 0;<br>
+}<br>
+<input type="radio" name="option4" value="capitalization" class="opt" onclick="cal4(1);"><span class="corr4">Result = -100.000000</span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">Result = -25.000000</span><br>
+<input type="radio" name="option4" value="Spelling" class="opt" onclick="cal4(3);"><span class="corr4">Result = 0.000000</span><br>
+<input type="radio" name="option4" value="Grammar" class="opt" onclick="cal4(4);"><span class="corr4">Result = 100.000000</span><br><br>
+<!-- 1 -->
+<!-- oDD ONE OUT -->
+<!-- 
+Explanation:
+
+Principal = Rs. (100 x 5400)/(12 X 3)= Rs. 15000.
+ -->
+
+<b>Ques 5</b>
+	
+What will be the output of the program?<br>
+
+#include<stdio.h><br>
+#define SQR(x)(x*x)<br>
+
+int main()<br>
+{<br>
+    int a, b=3;<br>
+    a = SQR(b+2);<br>
+    printf("%d\n", a);<br>
+    return 0;<br>
+}<br>
+<input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">Garbage Value</span><br>
+<input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5">Error</span><br>
+<input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">25</span><br>
+<input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">11</span><br><br>
+<!-- 4 -->
+<!-- simplification -->
+<!-- Explanation:
+Let the sum be Rs. 100. Then,
+
+S.I. for first 6 months = Rs. (100 x 10 x 1)/(100 X 2) = Rs. 5
+S.I. for last 6 months = Rs. (105 x 10 x 1)/(100 X 2) = Rs. 5.25
+
+So, amount at the end of 1 year = Rs. (100 + 5 + 5.25) = Rs. 110.25
+
+ Effective rate = (110.25 - 100) = 10.25% -->
+
+</div>
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (c) Not Compile <br><div><u>Explanation: </u>The code won't compile since declaration of t cannot occur within parenthesis.
+                 </div> </li><br>
+            <li> (a) During Pre Processing <br><div><u>Explanation: </u>The preprocessor replaces the line #include <stdio.h> with the system header file of that name. More precisely, the entire text of the file 'stdio.h' replaces the #include directive.</div> </li><br>
+            <li> (d) 12, 6, 12 <br><div><u>Explanation: </u>The macro MAN(x, y) ((x)>(y)) ? (x):(y); returns the biggest number of given two numbers.
+                <br>
+                Step 1: int i=10, j=5, k=0; The variable i, j, k are declared as an integer type and initialized to value 10, 5, 0 respectively.
+                <br>
+                Step 2: k = MAN(++i, j++); becomes,
+                <br>
+                => k = ((++i)>(j++)) ? (++i):(j++);
+                <br>
+                => k = ((11)>(5)) ? (12):(6);
+                <br>
+                => k = 12
+                <br>
+                Step 3: printf("%d, %d, %d\n", i, j, k); It prints the variable i, j, k.
+                <br>
+                In the above macro step 2 the variable i value is increemented by 2 and variable j value is increemented by 1.
+                <br>
+                Hence the output of the program is 12, 6, 12.</div></li><br>
+            <li> (a) Result = -100.000000<br><div><u>Explanation: </u>The macro function SQUARE(x) x*x calculate the square of the given number 'x'. (Eg: 102)
+                <br>
+                Step 1: float s=10, u=30, t=2, a; Here the variable s, u, t, a are declared as an floating point type and the variable s, u, t are initialized to 10, 30, 2.
+                <br>
+                Step 2: a = 2*(s-u*t)/SQUARE(t); becomes,
+                <br>
+                => a = 2 * (10 - 30 * 2) / t * t; Here SQUARE(t) is replaced by macro to t*t .
+                <br>
+                => a = 2 * (10 - 30 * 2) / 2 * 2;
+                <br>
+                => a = 2 * (10 - 60) / 2 * 2;
+                <br>
+                => a = 2 * (-50) / 2 * 2 ;
+                <br>
+                => a = 2 * (-25) * 2 ;
+                <br>
+                => a = (-50) * 2 ;
+                <br>
+                => a = -100;
+                <br>
+                Step 3: printf("Result=%f", a); It prints the value of variable 'a'.
+                <br>
+                Hence the output of the program is -100</div> </li><br>
+            <li> (d) 100<br><div><u>Explanation: </u>The macro function SQR(x)(x*x) calculate the square of the given number 'x'. (Eg: 102)
+                <br>
+                Step 1: int a, b=3; Here the variable a, b are declared as an integer type and the variable b is initialized to 3.
+                <br>
+                Step 2: a = SQR(b+2); becomes,
+                <br>
+                => a = b+2 * b+2; Here SQR(x) is replaced by macro to x*x .
+                <br>
+                => a = 3+2 * 3+2;
+                <br>
+                => a = 3 + 6 + 2;
+                <br>
+                => a = 11;
+                <br>
+                Step 3: printf("%d\n", a); It prints the value of variable 'a'.
+                <br>
+                Hence the output of the program is 11</div>  </li> <br>
+            
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>General Knowledge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="gk.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your General Knowledge</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 10 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+    <b>Ques 1</b> 	
+    	
+    Grand Central Terminal, Park Avenue, New York is the world's<br>
+
+<input type="radio" name="option1" value="capitalization" class="opt" onclick="cal1(1); " ><span class="corr1">highest railway station</span><br>
+<input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"><span class="corr1">longest railway station</span><br>
+<input type="radio" name="option1" value="Spelling" class="opt" onclick="cal1(3);"><span class="corr1">largest railway station</span><br>
+<input type="radio" name="option1" value="Grammar" class="opt"  onclick="cal1(4);"><span class="corr1" >None of the above</span><br><br>
+<!-- 3 --> 
+<!-- basic gk -->
+<!-- No Explanation needed -->
+
+<b>Ques 2</b>
+	
+Brass gets discoloured in air because of the presence of which of the following gases in air?
+
+
+<br>
+
+<input type="radio" name="option2" value="capitalization" class="opt" onclick="cal2(1);"><span class="corr2">Hydrogen sulphide</span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">Oxygen</span><br>
+<input type="radio" name="option2" value="Spelling" class="opt" onclick="cal2(3);"><span class="corr2">Carbon Dioxide</span><br>
+<input type="radio" name="option2" value="Grammar" class="opt" onclick="cal2(4);"><span class="corr2">Nitrogen</span><br><br>
+<!-- 1 -->
+<!-- general science -->
+<!-- No Explanation needed -->
+
+<b>Ques 3</b> 
+	
+The Parliament of India cannot be regarded as a sovereign body because
+<br>
+<input type="radio" name="option3" value="capitalization" class="opt" onclick="cal3(1);"><span class="corr3">it can legislate only on subjects entrusted to the Centre by the Constitution</span><br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"><span class="corr3">it has to operate within the limits prescribed by the Constitution</span><br>
+<input type="radio" name="option3" value="Spelling" class="opt" onclick="cal3(3);"><span class="corr3">Supreme Court can declare laws as unconstitutional if they contravene the provisions of the Constitution</span><br>
+<input type="radio" name="option3" value="Grammar" class="opt" onclick="cal3(4);"><span class="corr3">All of the above</span><br><br>
+<!-- 4 -->
+<!-- Politics -->
+
+<!-- No Explanation needed -->
+
+
+<b>Ques 4</b> 
+	
+	
+The name of the Laccadive, Minicoy and Amindivi islands was changed to Lakshadweep by an Act of Parliament in
+<br>
+<input type="radio" name="option4" value="capitalization" class="opt" onclick="cal4(1);"><span class="corr4">1973</span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">1972</span><br>
+<input type="radio" name="option4" value="Spelling" class="opt" onclick="cal4(3);"><span class="corr4">1971</span><br>
+<input type="radio" name="option4" value="Grammar" class="opt" onclick="cal4(4);"><span class="corr4">1970</span><br><br>
+<!-- 1 -->
+<!-- Politics -->
+
+<!-- No Explanation needed -->
+
+<b>Ques 5</b>
+	
+Which of the following is a non metal that remains liquid at room temperature?
+<br>
+<input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">Helium</span><br>
+<input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5">Chlorine</span><br>
+<input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">Phosphorus</span><br>
+<input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">Bromine</span><br><br>
+<!-- 4 -->
+<!-- General Science -->
+<!-- No Explanation needed -->
+
+<b>Ques 6</b>
+	
+	
+Entomology is the science that studies<br>
+<input type="radio" name="option6" value="capitalization" class="opt" onclick="cal6(1);"><span class="corr6">Behavior of human beings</span><br>
+<input type="radio" name="option6" value="Punctuation" class="opt" onclick="cal6(2);"><span class="corr6">The origin and history of technical and scientific terms</span><br>
+<input type="radio" name="option6" value="Spelling" class="opt" onclick="cal6(3);"><span class="corr6">Insects</span><br>
+<input type="radio" name="option6" value="Grammar" class="opt" onclick="cal6(2);"><span class="corr6">The formation of rocks</span><br><br>
+<!-- 3 -->
+<!-- basic gk -->
+<!-- c -->
+
+<b>Ques 7</b>
+	
+The Homolographic projection has the correct representation of
+<br>
+<input type="radio" name="option7" value="capitalization" class="opt" onclick="cal7(1);"><span class="corr7">shape</span><br>
+<input type="radio" name="option7" value="Punctuation" class="opt" onclick="cal7(2);"><span class="corr7">area</span><br>
+<input type="radio" name="option7" value="Spelling" class="opt" onclick="cal7(3);"><span class="corr7">baring </span><br>
+<input type="radio" name="option7" value="Grammar" class="opt" onclick="cal7(4);"><span class="corr7">distance</span><br><br>
+<!-- 2 --> 
+<!-- world-geography -->
+<!-- No Explanation needed -->
+
+<b>Ques 8</b> 
+The latitudinal differences in pressure delineate a number of major pressure zones, which correspond with
+<br>
+<input type="radio" name="option8" value="capitalization" class="opt" onclick="cal8(1);"><span class="corr8">zones of oceans</span><br>
+<input type="radio" name="option8" value="Punctuation" class="opt" onclick="cal8(2);"><span class="corr8">zones of land</span><br>
+<input type="radio" name="option8" value="Spelling" class="opt" onclick="cal8(3);"><span class="corr8">zones of climate</span><br>
+<input type="radio" name="option8" value="Grammar" class="opt" onclick="cal8(4);"><span class="corr8">	zones of cyclonic depressions</span><br><br>
+<!-- 3 -->
+<!-- world-geography -->
+
+<!-- No Explanation needed -->
+
+<b>Ques 9</b>
+	
+The nucleus of an atom consists of <br>
+<input type="radio" name="option9" value="capitalization" class="opt" onclick="cal9(1);"><span class="corr9">electrons and neutrons</span><br>
+<input type="radio" name="option9" value="Punctuation" class="opt" onclick="cal9(2);"><span class="corr9">protons and neutrons</span><br>
+<input type="radio" name="option9" value="Spelling" class="opt" onclick="cal9(3);"><span class="corr9">electrons and protons
+</span><br>
+<input type="radio" name="option9" value="Grammar" class="opt" onclick="cal9(4);"><span class="corr9">	All of the above</span><br><br>
+<!-- 2 -->
+<!-- chemistry -->
+
+<!-- No Explanation needed -->
+
+<b>Ques 10</b>
+The number of moles of solute present in 1 kg of a solvent is called its  <br>
+<input type="radio" name="option10" value="capitalization" class="opt" onclick="cal10(1);"><span class="corr10">molarity</span><br>
+<input type="radio" name="option10" value="Punctuation" class="opt" onclick="cal10(2);"><span class="corr10">normality</span><br>
+<input type="radio" name="option10" value="Spelling" class="opt" onclick="cal10(3);"><span class="corr10">molality</span><br>
+<input type="radio" name="option10" value="Grammar" class="opt" onclick="cal10(4);"><span class="corr10">formality</span> <br><br>
+<!-- 3 -->
+<!-- avg -->
+<!-- No Explanation needed -->
+
+
+</div>
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (c) largest railway station <br><div><u>Explanation: </u> No Explanation needed</div> </li><br>
+            <li> (a) Hydrogen sulphide <br><div><u>Explanation: </u> No Explanation needed</div> </li><br>
+            <li> (d) All of the above <br><div><u>Explanation: </u> No Explanation needed</div></li><br>
+            <li> (a) 1973<br><div><u>Explanation: </u> No Explanation needed</div> </li><br>
+            <li> (d) Bromine<br><div><u>Explanation: </u> No Explanation needed</div>  </li> <br>
+            <li> (c) The origin and history of technical and scientific terms <br><div><u>Explanation: </u>Entomology: The branch of zoology concerned with the study of insects.</div></li><br>
+            <li> (b) area <br><div><u>Explanation: </u>No Explanation needed</div></li><br>
+            <li> (c) zones of climate <br><div><u>Explanation: </u> No Explanation needed</div></li><br>
+            <li> (b) protons and neutrons<br><div><u>Explanation: </u> No Explanation needed</div></li><br>
+            <li> (c) molality<br><div><u>Explanation: </u>No Explanation needed</div></li>
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+
+
+
+<!-- <a class="btn btn-danger" role="button" target="blank" id="sistudy" href="gram_s.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Simple Interest'</a><br> -->
+<a class="btn btn-danger" role="button" target="blank" id="chemtest" href="chem_t.html" style="width: 400px; height: 65px; margin-left: 480px; font-size: 20px; font-weight: bold ">Take a test on 'Chemistry'</a><br><br><br>
+
+<!-- <a class="btn btn-success" role="button" target="blank" id="plstudy" href="syn_s.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Profit & Loss'</a><br> -->
+<a class="btn btn-success" role="button" target="blank" id="bgtest" href="bg_t.html" style="width: 400px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'Basic GK'</a><br><br><br>
+
+<!-- <a class="btn btn-warning" role="button" target="blank" id="perstudy" href="pers.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Percentage'</a><br> -->
+<a class="btn btn-warning" role="button" target="blank" id="gstest" href="gs_t.html" style="width: 400px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'General Science'</a><br><br><br>
+
+<!-- <a class="btn btn-info" role="button" target="blank" id="calstudy" href="cals.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Calendar'</a><br> -->
+<a class="btn btn-info" role="button" target="blank" id="poltest" href="pol_t.html" style="width: 400px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'Politics'</a><br><br><br>
+
+<!-- <a class="btn btn-dark" role="button" target="blank" id="avgstudy" href="avgs.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Average'</a><br> -->
+<a class="btn btn-dark" role="button" target="blank" id="wgtest" href="wg_t.html" style="width: 400px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'World Geography'</a><br><br><br>
+
+
+
+
+
+
+</form>
+</body>
+</html>
+
+
+

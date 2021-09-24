@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Aptitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="ba.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your Basic Aptitude</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 10 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+    <b>Ques 1</b> 	
+    	
+A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. The sum is:<br>
+
+<input type="radio" name="option1" value="capitalization" class="opt" onclick="cal1(1); " ><span class="corr1">Rs. 672</span><br>
+<input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"><span class="corr1">Rs. 554</span><br>
+<input type="radio" name="option1" value="Spelling" class="opt" onclick="cal1(3);"><span class="corr1">Rs. 698</span><br>
+<input type="radio" name="option1" value="Grammar" class="opt"  onclick="cal1(4);"><span class="corr1" >Rs. 816</span><br><br>
+<!-- 3 --> 
+<!-- si -->
+<!-- Explanation:
+
+S.I. for 1 year = Rs. (854 - 815) = Rs. 39.
+
+S.I. for 3 years = Rs.(39 x 3) = Rs. 117.
+
+ Principal = Rs. (815 - 117) = Rs. 698. -->
+
+
+<b>Ques 2</b>
+	
+The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:
+
+
+<br>
+
+<input type="radio" name="option2" value="capitalization" class="opt" onclick="cal2(1);"><span class="corr2">16</span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">18</span><br>
+<input type="radio" name="option2" value="Spelling" class="opt" onclick="cal2(3);"><span class="corr2">14</span><br>
+<input type="radio" name="option2" value="Grammar" class="opt" onclick="cal2(4);"><span class="corr2">12</span><br><br>
+<!-- 1 -->
+<!-- pl -->
+<!-- Explanation:
+
+Let C.P. of each article be Re. 1 C.P. of x articles = Rs. x.
+
+S.P. of x articles = Rs. 20.
+
+Profit = Rs. (20 - x).
+
+		(20 - x)/x* 100 = 25	
+
+ 2000 - 100x = 25x
+
+125x = 2000
+
+ x = 16. -->
+
+<b>Ques 3</b> 
+What percentage of numbers from 1 to 70 have 1 or 9 in the unit's digit? 
+<br>
+<input type="radio" name="option3" value="capitalization" class="opt" onclick="cal3(1);"><span class="corr3">26</span><br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"><span class="corr3">24</span><br>
+<input type="radio" name="option3" value="Spelling" class="opt" onclick="cal3(3);"><span class="corr3">18</span><br>
+<input type="radio" name="option3" value="Grammar" class="opt" onclick="cal3(4);"><span class="corr3">20</span><br><br>
+<!-- 4 -->
+<!-- percentage -->
+
+<!-- Explanation:
+
+Clearly, the numbers which have 1 or 9 in the unit's digit, have squares that end in the digit 1. Such numbers from 1 to 70 are 1, 9, 11, 19, 21, 29, 31, 39, 41, 49, 51, 59, 61, 69.
+
+Number of such number =14
+
+ Required percentage =		(14/70)	x 100% = 20%. -->
+
+
+<b>Ques 4</b> 
+	
+In an election between two candidates, one got 55% of the total valid votes, 20% of the votes were invalid. If the total number of votes was 7500, the number of valid votes that the other candidate got, was:
+<br>
+<input type="radio" name="option4" value="capitalization" class="opt" onclick="cal4(1);"><span class="corr4">2700</span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">3600</span><br>
+<input type="radio" name="option4" value="Spelling" class="opt" onclick="cal4(3);"><span class="corr4">2800</span><br>
+<input type="radio" name="option4" value="Grammar" class="opt" onclick="cal4(4);"><span class="corr4">3800</span><br><br>
+<!-- 1 -->
+<!-- percentage -->
+
+<!-- Explanation:
+
+Number of valid votes = 80% of 7500 = 6000.
+
+ Valid votes polled by other candidate = 45% of 6000
+
+=		(45/100)x 60000	= 2700. -->
+
+<b>Ques 5</b>
+A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?
+<br>
+<input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">2</span><br>
+<input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5">3</span><br>
+<input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">4</span><br>
+<input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">5</span><br><br>
+<!-- 4 -->
+<!-- pl -->
+<!-- Explanation:
+
+C.P. of 6 toffees = Re. 1
+
+S.P. of 6 toffees = 120% of Re. 1 = Rs.	6/5
+For Rs.	6/5	, toffees sold = 6.
+
+For Re. 1, toffees sold =		6 x	(5/6)= 5. -->
+
+<b>Ques 6</b>
+	
+How much time will it take for an amount of Rs. 450 to yield Rs. 81 as interest at 4.5% per annum of simple interest?<br>
+<input type="radio" name="option6" value="capitalization" class="opt" onclick="cal6(1);"><span class="corr6">4.5 years</span><br>
+<input type="radio" name="option6" value="Punctuation" class="opt" onclick="cal6(2);"><span class="corr6">3.5 years</span><br>
+<input type="radio" name="option6" value="Spelling" class="opt" onclick="cal6(3);"><span class="corr6">4 years</span><br>
+<input type="radio" name="option6" value="Grammar" class="opt" onclick="cal6(2);"><span class="corr6">2 years</span><br><br>
+<!-- 3 -->
+<!-- si -->
+<!-- Explanation:
+
+Time =		100 x 81	years	= 4 years.
+450 x 4.5 -->
+
+<b>Ques 7</b>
+It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?
+<br>
+<input type="radio" name="option7" value="capitalization" class="opt" onclick="cal7(1);"><span class="corr7">Saturday</span><br>
+<input type="radio" name="option7" value="Punctuation" class="opt" onclick="cal7(2);"><span class="corr7">Friday</span><br>
+<input type="radio" name="option7" value="Spelling" class="opt" onclick="cal7(3);"><span class="corr7">Monday </span><br>
+<input type="radio" name="option7" value="Grammar" class="opt" onclick="cal7(4);"><span class="corr7">Sunday</span><br><br>
+<!-- 2 --> 
+<!-- calendar -->
+<!-- Explanation:
+
+On 31st December, 2005 it was Saturday.
+
+Number of odd days from the year 2006 to the year 2009 = (1 + 1 + 2 + 1) = 5 days.
+
+ On 31st December 2009, it was Thursday.
+
+Thus, on 1st Jan, 2010 it is Friday. -->
+
+<b>Ques 8</b> 
+What was the day of the week on 28th May, 2006?
+<br>
+<input type="radio" name="option8" value="capitalization" class="opt" onclick="cal8(1);"><span class="corr8">Friday</span><br>
+<input type="radio" name="option8" value="Punctuation" class="opt" onclick="cal8(2);"><span class="corr8">Saturday</span><br>
+<input type="radio" name="option8" value="Spelling" class="opt" onclick="cal8(3);"><span class="corr8">Sunday</span><br>
+<input type="radio" name="option8" value="Grammar" class="opt" onclick="cal8(4);"><span class="corr8">Tuesday</span><br><br>
+<!-- 3 -->
+<!-- calendar -->
+
+<!-- Explanation:
+
+28 May, 2006 = (2005 years + Period from 1.1.2006 to 28.5.2006)
+
+Odd days in 1600 years = 0
+
+Odd days in 400 years = 0
+
+5 years = (4 ordinary years + 1 leap year) = (4 x 1 + 1 x 2)  6 odd days
+
+Jan.  Feb.   March    April    May 
+(31 +  28  +  31   +   30   +   28 ) = 148 days
+ 148 days = (21 weeks + 1 day)  1 odd day.
+
+Total number of odd days = (0 + 0 + 6 + 1) = 7  0 odd day.
+
+Given day is Sunday. -->
+
+<b>Ques 9</b>
+A grocer has a sale of Rs. 6435, Rs. 6927, Rs. 6855, Rs. 7230 and Rs. 6562 for 5 consecutive months. How much sale must he have in the sixth month so that he gets an average sale of Rs. 6500?  <br>
+<input type="radio" name="option9" value="capitalization" class="opt" onclick="cal9(1);"><span class="corr9">Rs. 6590</span><br>
+<input type="radio" name="option9" value="Punctuation" class="opt" onclick="cal9(2);"><span class="corr9">Rs. 4991</span><br>
+<input type="radio" name="option9" value="Spelling" class="opt" onclick="cal9(3);"><span class="corr9">Rs. 4590</span><br>
+<input type="radio" name="option9" value="Grammar" class="opt" onclick="cal9(4);"><span class="corr9">Rs. 6991</span><br><br>
+<!-- 2 -->
+<!-- avg -->
+
+<!-- Explanation:
+
+Total sale for 5 months = Rs. (6435 + 6927 + 6855 + 7230 + 6562) = Rs. 34009.
+
+ Required sale = Rs. [ (6500 x 6) - 34009 ]
+
+   = Rs. (39000 - 34009)
+
+   = Rs. 4991. -->
+
+<b>Ques 10</b>
+The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero? <br>
+<input type="radio" name="option10" value="capitalization" class="opt" onclick="cal10(1);"><span class="corr10">17</span><br>
+<input type="radio" name="option10" value="Punctuation" class="opt" onclick="cal10(2);"><span class="corr10">18</span><br>
+<input type="radio" name="option10" value="Spelling" class="opt" onclick="cal10(3);"><span class="corr10">19</span><br>
+<input type="radio" name="option10" value="Grammar" class="opt" onclick="cal10(4);"><span class="corr10">20</span> <br><br>
+<!-- 3 -->
+<!-- avg -->
+<!-- Explanation:
+
+Average of 20 numbers = 0.
+
+ Sum of 20 numbers (0 x 20) = 0.
+
+It is quite possible that 19 of these numbers may be positive and if their sum is a then 20th number is (-a). -->
+
+</div>
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (c) Rs. 698 <br><div><u>Explanation: </u> S.I. for 1 year = Rs. (854 - 815) = Rs. 39.
+                S.I. for 3 years = Rs.(39 x 3) = Rs. 117.
+                
+                 Principal = Rs. (815 - 117) = Rs. 698.</div> </li><br>
+            <li> (a) 16 <br><div><u>Explanation: </u> Let C.P. of each article be Re. 1 C.P. of x articles = Rs. x.
+                S.P. of x articles = Rs. 20.
+                Profit = Rs. (20 - x).
+                (20 - x)/x* 100 = 25	
+                2000 - 100x = 25x
+                125x = 2000
+                x = 16.</div> </li><br>
+            <li> (d) 20 <br><div><u>Explanation: </u> Clearly, the numbers which have 1 or 9 in the unit's digit, have squares that end in the digit 1. Such numbers from 1 to 70 are 1, 9, 11, 19, 21, 29, 31, 39, 41, 49, 51, 59, 61, 69.
+                Number of such number =14
+                Required percentage =(14/70)x 100% = 20%</div></li><br>
+            <li> (a) 2700<br><div><u>Explanation: </u> Number of valid votes = 80% of 7500 = 6000.
+                Valid votes polled by other candidate = 45% of 6000 =(45/100)x 60000 = 2700.</div> </li><br>
+            <li> (d) 5<br><div><u>Explanation: </u> C.P. of 6 toffees = Re. 1
+                S.P. of 6 toffees = 120% of Re. 1 = Rs.	6/5
+                For Rs.	6/5	, toffees sold = 6.
+                For Re. 1, toffees sold = 6 x (5/6)= 5.</div>  </li> <br>
+            <li> (c) 4 years <br><div><u>Explanation: </u>Time =100 x 81 years = 4 years.
+                450 x 4.5</div></li><br>
+            <li> (b) Friday <br><div><u>Explanation: </u> On 31st December, 2005 it was Saturday.
+                Number of odd days from the year 2006 to the year 2009 = (1 + 1 + 2 + 1) = 5 days.
+                On 31st December 2009, it was Thursday.
+                Thus, on 1st Jan, 2010 it is Friday.</div></li><br>
+            <li> (c) Sunday <br><div><u>Explanation: </u> 28 May, 2006 = (2005 years + Period from 1.1.2006 to 28.5.2006)
+                Odd days in 1600 years = 0
+                Odd days in 400 years = 0
+                5 years = (4 ordinary years + 1 leap year) = (4 x 1 + 1 x 2)  6 odd days
+                Jan.  Feb.   March    April    May 
+                (31 +  28  +  31   +   30   +   28 ) = 148 days
+                148 days = (21 weeks + 1 day)  1 odd day.
+                Total number of odd days = (0 + 0 + 6 + 1) = 7  0 odd day.
+                Given day is Sunday.</div></li><br>
+            <li> (b) 4991<br><div><u>Explanation: </u> Total sale for 5 months = Rs. (6435 + 6927 + 6855 + 7230 + 6562) = Rs. 34009.
+                Required sale = Rs. [ (6500 x 6) - 34009 ]
+               = Rs. (39000 - 34009)
+               = Rs. 4991.</div></li><br>
+            <li> (c) 19<br><div><u>Explanation: </u>Average of 20 numbers = 0.
+
+                Sum of 20 numbers (0 x 20) = 0.
+               
+               It is quite possible that 19 of these numbers may be positive and if their sum is a then 20th number is (-a).</div></li>
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+
+<a class="btn btn-danger" role="button" target="blank" id="sistudy" href="sis.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Simple Interest'</a><br>
+<a class="btn btn-danger" role="button" target="blank" id="sitest" href="sit.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px; font-weight: bold ">Take a test on 'Simple Interest'</a><br><br><br>
+
+<a class="btn btn-success" role="button" target="blank" id="plstudy" href="pls.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Profit & Loss'</a><br>
+<a class="btn btn-success" role="button" target="blank" id="pltest" href="plt.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Take a test on 'Profit & Loss'</a><br><br><br>
+
+<a class="btn btn-warning" role="button" target="blank" id="perstudy" href="pers.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Percentage'</a><br>
+<a class="btn btn-warning" role="button" target="blank" id="pertest" href="pert.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Take a test on 'Percentage'</a><br><br><br>
+
+<a class="btn btn-info" role="button" target="blank" id="calstudy" href="cals.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Calendar'</a><br>
+<a class="btn btn-info" role="button" target="blank" id="caltest" href="calt.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Take a test on 'Calendar'</a><br><br><br>
+
+<a class="btn btn-dark" role="button" target="blank" id="avgstudy" href="avgs.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Study 'Average'</a><br>
+<a class="btn btn-dark" role="button" target="blank" id="avgtest" href="avgt.html" style="width: 300px; height: 65px; margin-left: 550px; font-size: 20px;font-weight: bold">Take a test on 'Average'</a><br><br><br>
+
+
+
+
+</form>
+</body>
+</html>
+
+
+

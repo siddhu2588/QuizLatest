@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Idioms & Phrases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="iap.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your knowledge of the topic- 'IDIOM AND PHRASES'</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 5 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+    
+        
+    <b>Ques1</b>Choose the appropriate meaning of the idiom: Make up one's mind
+
+    <br>
+    <input type="radio" name="option1" value="Capitalization" class="opt" onclick="cal1(1);" ><span class="corr1">to be prepared</span> <br>
+    <input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"> <span class="corr1">to make someone happy</span><br>
+    <input type="radio" name="option1" value="Spelling"  class="opt" onclick="cal1(3);"> <span class="corr1">make a decision</span><br>
+    <input type="radio" name="option1" value="Grammer"  class="opt" onclick="cal1(4);"><span class="corr1">To criticize someone</span> <br> <br>
+    <!-- 3make a decision. -->
+    
+    
+<b>Ques2</b>Choose the appropriate meaning of the idiom: A man of straw 
+<br>
+
+<input type="radio" name="option2" value="Capitalization" class="opt" onclick="cal2(1);"><span class="corr2">a worthy fellow</span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">a man of no substance</span> <br>
+<input type="radio" name="option2" value="Spelling"  class="opt" onclick="cal2(3);"> <span class="corr2">a very active man</span><br>
+<input type="radio" name="option2" value="Grammar"  class="opt" onclick="cal2(4);"> <span class="corr2">a selfish person</span><br> <br>
+<!-- 2-->
+
+
+
+
+<b>Ques3</b>Choose the appropriate meaning of the idiom: To weather the storm<br>
+<input type="radio" name="option3" value="Capitalization" class="opt" onclick="cal3(1);"> <span class="corr3">survive a difficult situation</span> <br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"> <span class="corr3">create difficulty for others </span> <br>
+<input type="radio" name="option3" value="Spelling"  class="opt" onclick="cal3(3);"> <span class="corr3">victim of crisis</span> <br>
+<input type="radio" name="option3" value="Grammar"  class="opt" onclick="cal3(4);"> <span class="corr3">unsuccessful attempt </span> <br> <br>
+<!-- 1-->
+
+
+<b>Ques4</b>  In the following question, an idiom or proverb has been underlined. Choose its correct meaning in the given context from the alternatives given below:I was <u>hoping against hope</u> that she would agree to my proposal.
+<br>
+<input type="radio" name="option4" value="Capitalization" class="opt" onclick="cal4(1);"><span class="corr4">hoping for something </span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">hoping against something </span> <br>
+<input type="radio" name="option4" value="Spelling"  class="opt" onclick="cal4(3);"> <span class="corr4">hoping without any/little chances of success</span> <br>
+<input type="radio" name="option4" value="Grammar"  class="opt" onclick="cal4(4);"> <span class="corr4">None of the above</span> <br> <br>
+<!-- 3 -->
+
+    
+<b>Ques 5</b>Four alternatives are given for the idioms/ phrases underlined in the sentence. Choose the one that best expresses the meaning of the idiom: The demolition of the Babri Masjid had been a political <u>hot potato</u> for years.
+
+
+<br>
+ <input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">a hotly debated delicate issue</span><br>
+ <input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5"> a helping agent</span><br>
+ <input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">forbidden issue</span><br>
+ <input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">something that has been for long in the newspapers</span><br><br>
+  <!-- 1 -->
+ 
+</div>
+
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (c)make a decision <br></li><br>
+
+            <li> (b)a man of no substance <br></li><br>
+
+            <li> (a)survive a difficult situation<br> </li><br>
+
+
+            <li> (c)hoping without any/little chances of success<br> </li> <br>
+
+                    
+            <li>(a)a hotly debated delicate issue<br> </li>
+
+                            
+
+
+            
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+</form>
+</body>
+</html>

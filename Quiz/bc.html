@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css">
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+      <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    
+    
+    <script src="bc.js"></script>
+</head>
+<body onload="start();">
+    <form name="f2">
+        <div style="background-color: black">
+        <h3 id="heading1" style="color:white">Here is a quiz that test your Basic Aptitude</h3>
+        <h4 id="heading2"style="color:white"> <i> <u>We have provided you 10 questions.Also after competing the quiz you will get your marks</u></i></h4><br> 
+        </div>
+        <br>
+        <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+        <br><br>
+
+       <div id="ques">
+            <b>Ques1</b>Predict the output of following program?    <br>
+            #include "stdio.h"<br>
+            int main()<br>
+            {<Br>
+           char arr[100];<br>
+          printf("%d", scanf("%s", arr));<br>
+          /* Suppose that input value given
+         for above scanf is "GeeksQuiz" */
+          return 1; <br>
+            }<br>
+            <input type="radio" name="option1" value="Capitalization" class="opt" onclick="cal1(1);" ><span class="corr1">1</span> <br>
+            <input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"> <span class="corr1">9</span><br>
+            <input type="radio" name="option1" value="Spelling"  class="opt" onclick="cal1(3);"> <span class="corr1">100</span><br>
+            <input type="radio" name="option1" value="Grammer"  class="opt" onclick="cal1(4);"><span class="corr1"> 10 </span> <br> <br>
+            <!-- 1i/p o/p -->
+            <!-- In C, scanf returns the no. of inputs it has successfully read.. -->
+        
+
+            <b>Ques2</b>    
+            #include "stdio.h" <br>
+            int main() <br>
+            { <br>
+              int x, y = 5, z = 5; <br>
+              x = y == z; <br>
+              printf("%d", x); <br>
+              
+              getchar(); <br>
+              return 0; <br>
+            }
+            <br>
+            
+            <input type="radio" name="option2" value="Capitalization" class="opt" onclick="cal2(1);"><span class="corr2">Compile error </span><br>
+            <input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2"> 0</span> <br>
+            <input type="radio" name="option2" value="Spelling"  class="opt" onclick="cal2(3);"> <span class="corr2"> 5</span><br>
+            <input type="radio" name="option2" value="Grammar"  class="opt" onclick="cal2(4);"> <span class="corr2"> 1</span><br> <br>
+            <!-- 4operators -->
+            <!-- The crux of the question lies in the statement x = y==z. 
+               The operator == is executed before = because precedence of comparison operators (<=, >= and ==) is higher than assignment operator =. 
+               The result of a comparison operator is either 0 or 1 based on the comparison result. Since y is equal to z, value of the expression y == z becomes 1 and the value is assigned to x via the assignment operator. -->
+
+
+            <b>Ques3</b>How many main() function we can have in our project?<br>
+            <input type="radio" name="option3" value="Capitalization" class="opt" onclick="cal3(1);"> <span class="corr3">No limit</span> <br>
+            <input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"> <span class="corr3">Depends on compiler</span> <br>
+            <input type="radio" name="option3" value="Spelling"  class="opt" onclick="cal3(3);"> <span class="corr3">1</span> <br>
+            <input type="radio" name="option3" value="Grammar"  class="opt" onclick="cal3(4);"> <span class="corr3">2</span> <br> <br>
+            <!-- 3Function-->
+            <!-- Explanation:
+
+We can't have more than one main() function in a project. -->
+
+
+            
+
+
+            <b>Ques4</b>In C, parameters are always <br>
+            <input type="radio" name="option4" value="Capitalization" class="opt" onclick="cal4(1);"><span class="corr4"> Passed by value </span><br>
+            <input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4"> Passed by reference</span> <br>
+            <input type="radio" name="option4" value="Spelling"  class="opt" onclick="cal4(3);"> <span class="corr4">Non-pointer variables are passed by value and pointers are passed by reference</span> <br>
+            <input type="radio" name="option4" value="Grammar"  class="opt" onclick="cal4(4);"> <span class="corr4"> Passed by value result</span> <br> <br>
+            <!-- 1function -->
+            <!-- In C, function parameters are always passed by value. Pass-by-reference is simulated in C by explicitly passing pointer values. -->
+
+
+            <b>Ques 5</b> #include <stdio.h><br>
+               int main()<br>
+               {<br>
+              int i = (1, 2, 3);<br>
+              printf("%d", i);<br>
+              return 0;<br>
+               }
+
+         <br>
+          <input type="radio" name="option5" value="capitalization" class="opt" onclick="cal5(1);"><span class="corr5">Garbage value</span><br>
+          <input type="radio" name="option5" value="Punctuation" class="opt" onclick="cal5(2);"><span class="corr5">3</span><br>
+          <input type="radio" name="option5" value="Spelling" class="opt" onclick="cal5(3);"><span class="corr5">1</span><br>
+          <input type="radio" name="option5" value="Grammar" class="opt" onclick="cal5(4);"><span class="corr5">2</span><br><br>
+           <!-- 2operators -->
+           <!-- The bracket operator has higher precedence than assignment operator.
+             The expression within bracket operator is evaluated from left to right but it is always the result of the last expression which gets assigned. -->
+
+
+
+<b>Ques 6</b>Predict the output of following program? <br>
+    #include <stdio.h><br>
+   // Assume base address of "GeeksQuiz" to be 1000<br>
+   int main()<br>
+   {<br>
+      printf(5 + "GeeksQuiz");<br>
+      return 0;<br>
+   }<br>
+
+<input type="radio" name="option6" value="capitalization" class="opt" onclick="cal6(1);"><span class="corr6">GeeksQuiz</span><br>
+<input type="radio" name="option6" value="Punctuation" class="opt" onclick="cal6(2);"><span class="corr6">1005</span><br>
+<input type="radio" name="option6" value="Spelling" class="opt" onclick="cal6(3);"><span class="corr6">Quiz</span><br>
+<input type="radio" name="option6" value="Grammar" class="opt" onclick="cal6(2);"><span class="corr6">Compile time error</span><br><br>
+<!-- 3I/P O/P -->
+<!-- Explanation:
+
+printf is a library function defined under stdio.h header file. The compiler adds 5 to the base address of the string through the expression 5 + "GeeksQuiz" .
+ Then the string "Quiz" gets passed to the standard library function as an argument.-->
+
+
+<b>Ques 7</b> #include <stdio.h><br>
+   #if X == 3<br>
+       #define Y 3<br>
+   #else<br>
+       #define Y 5<br>
+   #endif<br>
+    
+   int main()<br>
+   {<br>
+       printf("%d", Y);<br>
+       return 0;<br>
+   } <br><br>
+    
+<input type="radio" name="option7" value="capitalization" class="opt" onclick="cal7(1);"><span class="corr7">5</span><br>
+<input type="radio" name="option7" value="Punctuation" class="opt" onclick="cal7(2);"><span class="corr7">3</span><br>
+<input type="radio" name="option7" value="Spelling" class="opt" onclick="cal7(3);"><span class="corr7">5 or 3 depending on value of X</span><br>
+<input type="radio" name="option7" value="Grammar" class="opt" onclick="cal7(4);"><span class="corr7">Compile time error</span><br><br>
+<!-- 1Macro&pre-processeor -->
+<!-- Explanation:
+
+In the first look, the output seems to be compile-time error because macro X has not been defined. In C, if a macro is not defined, the pre-processor assigns 0 to it by default.
+ Hence, the control goes to the conditional else part and 5 is printed. See the next question for better understanding. -->
+
+<b>Ques 8</b> Which file is generated after pre-processing of a C program?
+<br>
+<input type="radio" name="option8" value="capitalization" class="opt" onclick="cal8(1);"><span class="corr8">.o</span><br>
+<input type="radio" name="option8" value="Punctuation" class="opt" onclick="cal8(2);"><span class="corr8">.i</span><br>
+<input type="radio" name="option8" value="Spelling" class="opt" onclick="cal8(3);"><span class="corr8">.p</span><br>
+<input type="radio" name="option8" value="Grammar" class="opt" onclick="cal8(4);"><span class="corr8">.m</span><br><br>
+<!-- 2Macro&pre-processeor -->
+<!-- After the pre-processing of a C program, a .i file is generated which is passed to the compiler for compilation. -->
+
+
+<b>Ques 9</b>
+Which of the following is true about arrays in C. <br>
+<input type="radio" name="option9" value="capitalization" class="opt" onclick="cal9(1);"><span class="corr9">For every type T except void and function type, there can be an array of T.</span><br>
+<input type="radio" name="option9" value="Punctuation" class="opt" onclick="cal9(2);"><span class="corr9">For every type T, there can be an array of T.</span><br>
+<input type="radio" name="option9" value="Spelling" class="opt" onclick="cal9(3);"><span class="corr9">When an array is passed to a function, C compiler creates a copy of array.</span><br>
+<input type="radio" name="option9" value="Grammar" class="opt" onclick="cal9(4);"><span class="corr9">2D arrays are stored in column major form</span><br><br>
+<!-- 1arrays -->
+<!-- Explanation:
+
+In C, we cannot have an array of void type and function types. For example, below program throws compiler error
+int main()
+{
+    void arr[100];
+}
+But we can have array of void pointers and function pointers. The below program works fine.
+int main()
+{
+    void *arr[100];
+} -->
+
+
+
+<b>Ques 10</b>Predict output of following program<br>
+int main()<br>
+{<br>
+    int i;<br>
+    int arr[5] = {1};<br>
+    for (i = 0; i < 5; i++)<br>
+        printf("%d ", arr[i]);<br>
+    return 0;<br>
+} <br>
+<input type="radio" name="option10" value="capitalization" class="opt" onclick="cal10(1);"><span class="corr10">1 followed by four garbage values</span><br>
+<input type="radio" name="option10" value="Punctuation" class="opt" onclick="cal10(2);"><span class="corr10">1 0 0 0 0</span><br>
+<input type="radio" name="option10" value="Spelling" class="opt" onclick="cal10(3);"><span class="corr10">1 1 1 1 1</span><br>
+<input type="radio" name="option10" value="Grammar" class="opt" onclick="cal10(4);"><span class="corr10">0 0 0 0 0</span> <br><br>
+<!-- 2arrays -->
+<!-- Explanation:
+
+ In C/C++, if we initialize an array with fewer members, all remaining members are automatically initialized as 0. For example, the following statement initializes an array of size 1000 with values as 0.
+     int arr[1000] = {0};  -->
+
+</div>
+<!-- <a href="corrans.html" target="blank" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="corrans" style="width:430px;">Correct Answers and Analysis Report</a> <br> -->
+<!-- <a href="bear.html" target="blank" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" id="bear" style="width:430px;">View Analysis Report</a> <br> -->
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<input type="button" id="caar" onclick="ar();move();fmove();pc();para()" value="Correct Answers and Analysis Report"> 
+
+<div id="ans">
+        <h1><u><center>CORRECT ANSWERS AND ANALYSIS REPORT</center></u></h1>
+        <ol>
+            <li>(a)1
+                <br>
+                <div>
+                <u>Explanation:</u> In C, scanf returns the no. of inputs it has successfully read.
+                </div>
+            </li><br>
+            <li>(d)1
+                <br>
+                <div>
+                <u>Explanation:</u> The crux of the question lies in the statement x = y==z. <br>
+                The operator == is executed before = because precedence of comparison operators (<=, >= and ==) is higher than assignment operator =. <br>
+                The result of a comparison operator is either 0 or 1 based on the comparison result. Since y is equal to z, value of the expression y == z becomes 1 and the value is assigned to x via the assignment operator.<br>
+ 
+                </div>
+    
+            </li><br>
+            <li> (c)1
+                <br>
+                <div>
+                    <u>Explanation:</u>We can't have more than one main() function in a project.
+                 </div>
+            </li><br>
+    
+            <li>(a)Passed by value<br>
+            <div>
+                <u>Explanation:</u>In C, function parameters are always passed by value. Pass-by-reference is simulated in C by explicitly passing pointer values.
+               
+               
+             </div></li><br>
+             <li>(b)3<br>
+                <div>
+                    <u>Explanation:</u>The bracket operator has higher precedence than assignment operator.<br>
+                    The expression within bracket operator is evaluated from left to right but it is always the result of the last expression which gets assigned.
+                 </div>
+            </li><br>
+             <li>(c)Quiz<br>
+            <div>
+                <u>Explanation:</u> printf is a library function defined under stdio.h header file. The compiler adds 5 to the base address of the string through the expression 5 + "GeeksQuiz" .<br>
+                Then the string "Quiz" gets passed to the standard library function as an argument.
+    
+            </div></li><br>
+    
+             <li>(a)5<br>
+            <div>
+                <u>Explanation:</u>In the first look, the output seems to be compile-time error because macro X has not been defined. In C, if a macro is not defined, the pre-processor assigns 0 to it by default.<br>
+                Hence, the control goes to the conditional else part and 5 is printed. See the next question for better understanding. -->
+               
+    
+            </div></li><br>
+    
+             <li>(b).i<br>
+            <div>
+                <u>Explanation:</u>After the pre-processing of a C program, a .i file is generated which is passed to the compiler for compilation.
+    
+            </div></li><br>
+    
+             <li>(a)For every type T except void and function type, there can be an array of T.<br>
+                 <div>
+                    <u>Explanation:</u>In C, we cannot have an array of void type and function types. For example, below program throws compiler error
+                    int main()<br>
+                    {<br>
+                        void arr[100];<br>
+                    }<br>
+                    But we can have array of void pointers and function pointers. The below program works fine.<br>
+                    int main()<br>
+                    {<br>
+                        void *arr[100];<br>
+                    } <br>
+                 </div>
+             </li><br>
+             <li>(b)1 0 0 0 0<br>
+             <div>
+                <u>Explanation:</u>In C/C++, if we initialize an array with fewer members, all remaining members are automatically initialized as 0.<br>
+                 For example, the following statement initializes an array of size 1000 with values as 0.<br>
+                int arr[1000] = {0};
+             </div>
+             </li>
+        </ol>
+</div>
+
+<div id="bear"></div>
+<br><br>
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<br>
+<div id="myFailure">
+  <div id="FailBar"></div>
+</div>
+<br>
+<div  id="pnt">
+</div>
+<br><br>
+<div id="container" style="width: 100%; height: 500px;"></div>
+<br><br><br>
+<div id="para"></div>
+<!-- <a class="btn btn-danger" role="button" target="blank" id="sistudy" href="i&ostudy.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Study 'Input and output'</a><br> -->
+<a class="btn btn-danger" role="button" target="blank" id="sitest" href="i&otest.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px; font-weight: bold ">Take a test on 'Input and Output'</a><br><br><br>
+
+<a class="btn btn-success" role="button" target="blank" id="plstudy" href="operatorstudy.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Study 'Operators'</a><br>
+<a class="btn btn-success" role="button" target="blank" id="pltest" href="operatortest.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'Operators'</a><br><br><br>
+
+<a class="btn btn-warning" role="button" target="blank" id="perstudy" href="functionstudy.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Study 'Function'</a><br>
+<a class="btn btn-warning" role="button" target="blank" id="pertest" href="functiontest.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'Function'</a><br><br><br>
+
+<a class="btn btn-info" role="button" target="blank" id="calstudy" href="m&pstudy.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Study 'Macro & Pre-processor'</a><br>
+<a class="btn btn-info" role="button" target="blank" id="caltest" href="m&ptest.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on 'Macro & Pre-processor'</a><br><br><br>
+
+<a class="btn btn-dark" role="button" target="blank" id="avgstudy" href="arraystudy.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Study 'Array'</a><br>
+<a class="btn btn-dark" role="button" target="blank" id="avgtest" href="arraytest.html" style="width: 450px; height: 65px; margin-left: 480px; font-size: 20px;font-weight: bold">Take a test on  'Array'</a><br>
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-image: url("img14.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#heading1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.txt{
+    margin-left: 37%;
+    font-size: 50px;
+    color: darkred;
+    font-weight: bold;
+
+}
+
+#heading2{
+    text-align: center;
+    font-size: 30px;    
+    opacity: 0.7;
+    margin-top:0;
+}
+
+#heading3{
+    font-size: 25px;
+    text-align: center;
+}
+
+#btndiv{
+    text-align: center;
+}
+
+#ba{
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#be{
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+#bc{
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+#ca{
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+

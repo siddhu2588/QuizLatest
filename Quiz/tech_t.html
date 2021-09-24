@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index1.css" />
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    `<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    
+    <script src="tech_t.js"></script>
+</head>
+<!-- <body onload="startTimer();"> -->
+    <body ONLOAD="start();">
+        <div style="background: black">
+        <h3 id="heading1" style="color: white">Here is a quiz that tests your knowledge of the topic- 'TECHNOLOGY'</h3>
+        <h4 id="heading2" style="color: white"><i><u>We have provided you 5 questions. Also, after completing the quiz, you will get your marks.</u></i></h4><BR>
+     <!-- <div id="timerbody"> Time Left: <span id ="timer"></span></div> -->
+     <!-- <div>Time Left: <span id="time">05:00</span> minutes!</div> -->
+     </div><br>
+     <div id="timerbody">After <span id="timer" style="color:red"></span> your quiz will automatically submit</div>
+    <!-- <button onclick="stop();">stop</button></div>   -->
+     <br><br>
+        <form name="f2">
+        <div id="ques">
+
+    
+        
+    <b>Ques1</b>Which of the following has partnered will UNESCO to adopt technology in classrooms?
+
+    <br>
+    <input type="radio" name="option1" value="Capitalization" class="opt" onclick="cal1(1);" ><span class="corr1">Samsung</span> <br>
+    <input type="radio" name="option1" value="Punctuation" class="opt" onclick="cal1(2);"> <span class="corr1">DELL</span><br>
+    <input type="radio" name="option1" value="Spelling"  class="opt" onclick="cal1(3);"> <span class="corr1">Lenovo</span><br>
+    <input type="radio" name="option1" value="Grammer"  class="opt" onclick="cal1(4);"><span class="corr1">Toshiba</span> <br> <br>
+    <!-- 2 BDCA -->
+    
+    
+<b>Ques2</b>	
+Which of the following launched India's First Service Audio Service 'Suno'?
+<br>
+
+<input type="radio" name="option2" value="Capitalization" class="opt" onclick="cal2(1);"><span class="corr2">Netflix </span><br>
+<input type="radio" name="option2" value="Punctuation" class="opt" onclick="cal2(2);"><span class="corr2">Google</span> <br>
+<input type="radio" name="option2" value="Spelling"  class="opt" onclick="cal2(3);"> <span class="corr2">Audible</span><br>
+<input type="radio" name="option2" value="Grammar"  class="opt" onclick="cal2(4);"> <span class="corr2">Facebook</span><br> <br>
+<!-- 3abdc. -->
+
+
+
+
+<b>Ques3</b>FSSAI to develop app to prevent food wastage in partnership with whichcompany?<br>
+<input type="radio" name="option3" value="Capitalization" class="opt" onclick="cal3(1);"> <span class="corr3">Google</span> <br>
+<input type="radio" name="option3" value="Punctuation" class="opt" onclick="cal3(2);"> <span class="corr3">Infosys</span> <br>
+<input type="radio" name="option3" value="Spelling"  class="opt" onclick="cal3(3);"> <span class="corr3">Nasscom Foundation</span> <br>
+<input type="radio" name="option3" value="Grammar"  class="opt" onclick="cal3(4);"> <span class="corr3">TCS</span> <br> <br>
+<!-- 3acbd.-->
+
+<b>Ques4</b>Government launched 'indianculture.gov.in' portal is developed by which of the following institutes? <br>
+<input type="radio" name="option4" value="Capitalization" class="opt" onclick="cal4(1);"><span class="corr4">IIT Bombay</span><br>
+<input type="radio" name="option4" value="Punctuation" class="opt" onclick="cal4(2);"><span class="corr4">IIT Delhi </span> <br>
+<input type="radio" name="option4" value="Spelling"  class="opt" onclick="cal4(3);"> <span class="corr4">IIT Kharagpur</span> <br>
+<input type="radio" name="option4" value="Grammar"  class="opt" onclick="cal4(4);"> <span class="corr4">IIT Himachal</span> <br> <br>
+<!-- 1badc -->
+
+  
+
+    
+    
+<b>Ques 5</b>	
+Researchers of which institute has designed a paper-based sensor to detect the quality of milk?<br>
+    
+<input type="radio" name="option7" value="capitalization" class="opt" onclick="cal7(1);"><span class="corr7">IIT Bombay</span><br>
+<input type="radio" name="option7" value="Punctuation" class="opt" onclick="cal7(2);"><span class="corr7">IIT Hyderabad</span><br>
+<input type="radio" name="option7" value="Spelling" class="opt" onclick="cal7(3);"><span class="corr7">IIT Delhi</span><br>
+<input type="radio" name="option7" value="Grammar" class="opt" onclick="cal7(4);"><span class="corr7">IIT Guwahati</span><br><br>
+  <!-- 4cbda -->
+
+
+</div>
+
+
+<!-- <button id="corrans" value="Show Correct Answers">Show Correct Answers</button> -->
+<!-- <a href="corrans.html" role="button" id="corrans" target="blank"style="width: 430px">Show Correct Answers</a><br>    -->
+
+<!-- <a href="corrans.html"><button id="corrans">Show Correct Answers</button></a> -->
+
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Show Correct Answers</a> -->
+
+<!-- <a class="btn btn-secondary" href="bear.html" role="button" id="bear" target="blank" style="width: 430px">View Analysis Report</a> -->
+
+
+
+
+<!-- <input type="button" id="bear" onclick="ar();" value="View Analysis Report">  -->
+<div id="score"></div>
+<input type="button" id="sub" onclick="showres();" value="Submit Your Answers"> 
+<!-- <a class="btn btn-secondary" href="corrans1.html" role="button" id="corrans" target="blank" style="width: 430px">Correct Answers and Analysis Report</a> -->
+<input type="button" id="caar" onclick="ar(); move(); fmove(); pc(); para();" value="Correct Answers and Analysis Report"> 
+<div id="ans"> 
+    
+        <h1 style="text-align: center"><u>CORRECT ANSWERS & ANALYSIS REPORT</u></h1>
+    
+        <ol>
+            <li> (b)DELL <br></li><br>
+
+            <li> (c)Audible <br></li><br>
+
+            <li> (c)Nasscom Foundation<br> </li><br>
+
+
+            <li> (a)IIT Bombay<br> </li> <br>
+
+                    
+            <li> (d)IIT Guwahati<br> </li>
+
+                            
+
+
+            
+        </ol>
+</div>
+<div id="bear"></div>
+<br><br>
+
+<div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<br><br> 
+
+<div id="myFailure">
+    <div id="failbar"></div>
+  </div>
+<br>
+<div id="pnt"></div><br><br>
+
+<!-- <div id="container" style="width: 50%; height: 50%"></div> -->
+<div id="pc" style="width: 100%; height: 500px;"></div><br><br><br>
+<div id="para"></div><br><br>
+</form>
+</body>
+</html>

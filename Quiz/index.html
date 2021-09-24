@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+       //random function
+           function beopen(){
+           var random = Math.floor((Math.random() * 10) + 1);  //Math.random() provides a random number from [0,1) (floating point: '[' = inclusive, ')' = exclusive).So in Math.floor( (Math.random() * 10) + 1); multiplying Math.random() by 10 will provide a random number from [0, 10).The +1 after the multiplication will change the output to be [1, 11).Then finally Math.floor( ... ) converts the random number that is in the range from [1, 11) to an integer value
+           var x1= document.createElement("a");
+           var t1= document.createTextNode("Start Your Quiz");
+           x1.setAttribute("href", "be.html");
+           x1.setAttribute("class", "txt");
+           x1.appendChild(t1);
+           
+
+           var x2= document.createElement("a");
+           var t2= document.createTextNode("Start Your Quiz");
+           x2.setAttribute("href", "be1.html");
+           x2.setAttribute("class", "txt");
+           x2.appendChild(t2);
+
+           
+
+           if(random>=1 && random<=5){
+              
+             document.body.appendChild(x1);  
+            //alert(random);
+             }
+             
+             else {
+               
+             document.body.appendChild(x2);  
+             //alert(random); 
+             }
+        }
+
+         function baopen(){
+           var random = Math.floor((Math.random() * 10) + 1);  //Math.random() provides a random number from [0,1) (floating point: '[' = inclusive, ')' = exclusive).So in Math.floor( (Math.random() * 10) + 1); multiplying Math.random() by 10 will provide a random number from [0, 10).The +1 after the multiplication will change the output to be [1, 11).Then finally Math.floor( ... ) converts the random number that is in the range from [1, 11) to an integer value
+           var x1= document.createElement("a");
+           var t1= document.createTextNode("Start Your Quiz");
+           x1.setAttribute("href", "ba.html");
+           x1.setAttribute("class", "txt");
+           x1.appendChild(t1);
+           
+
+           var x2= document.createElement("a");
+           var t2= document.createTextNode("Start Your Quiz");
+           x2.setAttribute("href", "ba1.html");
+           x2.setAttribute("class", "txt");
+           x2.appendChild(t2);
+
+           
+
+           if(random>=1 && random<=5){
+              
+             document.body.appendChild(x1);  
+            //alert(random);
+             }
+             
+             else {
+               
+             document.body.appendChild(x2);  
+             //alert(random); 
+             }
+        }
+
+         function caopen(){
+           var random = Math.floor((Math.random() * 10) + 1);  //Math.random() provides a random number from [0,1) (floating point: '[' = inclusive, ')' = exclusive).So in Math.floor( (Math.random() * 10) + 1); multiplying Math.random() by 10 will provide a random number from [0, 10).The +1 after the multiplication will change the output to be [1, 11).Then finally Math.floor( ... ) converts the random number that is in the range from [1, 11) to an integer value
+           var x1= document.createElement("a");
+           var t1= document.createTextNode("Start Your Quiz");
+           x1.setAttribute("href", "gk.html");
+           x1.setAttribute("class", "txt");
+           x1.appendChild(t1);
+           
+
+           var x2= document.createElement("a");
+           var t2= document.createTextNode("Start Your Quiz");
+           x2.setAttribute("href", "gk1.html");
+           x2.setAttribute("class", "txt");
+           x2.appendChild(t2);
+
+           
+
+           if(random>=1 && random<=5){
+              
+             document.body.appendChild(x1);  
+            //alert(random);
+             }
+             
+             else {
+               
+             document.body.appendChild(x2);  
+             //alert(random); 
+             }
+        }
+
+
+         function bcopen(){
+           var random = Math.floor((Math.random() * 10) + 1);  //Math.random() provides a random number from [0,1) (floating point: '[' = inclusive, ')' = exclusive).So in Math.floor( (Math.random() * 10) + 1); multiplying Math.random() by 10 will provide a random number from [0, 10).The +1 after the multiplication will change the output to be [1, 11).Then finally Math.floor( ... ) converts the random number that is in the range from [1, 11) to an integer value
+           var x1= document.createElement("a");
+           var t1= document.createTextNode("Start Your Quiz");
+           x1.setAttribute("href", "bc.html");
+           x1.setAttribute("class", "txt");
+           x1.appendChild(t1);
+           
+
+           var x2= document.createElement("a");
+           var t2= document.createTextNode("Start Your Quiz");
+           x2.setAttribute("href", "bc.html");
+           x2.setAttribute("class", "txt");
+           x2.appendChild(t2);
+
+           
+
+           if(random>=1 && random<=5){
+              
+             document.body.appendChild(x1);  
+            //alert(random);
+             }
+             
+             else {
+               
+             document.body.appendChild(x2);  
+             //alert(random); 
+             }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <h1 id="heading1">THE QUIZZARD OF ENGINEERING</h1>
+    <h3 id="heading2">Welcome! Here you can test yourself before going to apply for a job ;)</h3> <br>
+    <h2 id="heading3"><u>Select the area in which you want to test yourself</u> </h2> <br>
+    <div id="btndiv">
+    
+    <!-- <button type="button" class="btn btn-secondary" id="ba" onclick="ba.html">Basic Aptitude</button> <br> -->
+    <a class="btn btn-secondary" role="button" id="ba" onclick="baopen();" style="width: 430px">Basic Aptitude</a><br>
+    <a class="btn btn-secondary" role="button" id="be" onclick="beopen();" style="width: 430px">Basic English</a><br><span></span>
+    <a class="btn btn-secondary" role="button" id="bc" onclick="bcopen();" style="width: 430px">Basic C++</a><br>
+    <a class="btn btn-secondary" role="button" id="ca" onclick="caopen();" style="width: 430px">General Knowledge</a><br>   
+
+    
+    </div>
+
+
+</body>
+</html>
